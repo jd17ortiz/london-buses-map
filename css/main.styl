@@ -1,0 +1,60 @@
+@font-face {
+	font-family: 'icons';
+	src:url('fonts/icomoon.eot?-9xuko0');
+	src:url('fonts/icomoon.eot?#iefix-9xuko0') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-9xuko0') format('woff'),
+		url('fonts/icomoon.ttf?-9xuko0') format('truetype'),
+		url('fonts/icomoon.svg?-9xuko0#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body
+	font-size 14px
+	font-family 'Roboto', sans-serif;
+
+.container
+	width 1120px
+	height 600px
+	
+	h1
+		color #15BAEA
+	
+	.google-maps
+		position: relative;
+		padding-bottom: 50%;
+		height: 0;
+		overflow: hidden;
+		
+	#map-canvas
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100% !important;
+		height: 100% !important;
+		
+	.icon-bus
+		color #DA0000
+		&:before
+			content: "\e600"
+			font-family "icons"
+			font-size 1.5em
+			
+	.container-routes
+		list-style none
+		padding-left 0
+		max-height 150px
+		overflow scroll
+		
+		li
+			margin 0 0 5px
+		
+		.route-name
+			display inline-block
+			vertical-align top
+			font-weight bold
+		
+		.scheduled-time
+			margin 0 0 0 6px
+			float right
+	
